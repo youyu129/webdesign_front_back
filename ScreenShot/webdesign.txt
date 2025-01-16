@@ -51,27 +51,28 @@
 
 # navbar
     首頁
-    關於我們
-    服務項目
-        商業攝影
-        人像攝影
-        家庭寫真
-        活動紀錄
-        寵物寫真
-        婚禮攝影
-        自助婚紗
-    攝影作品
-    聯絡我們
-    常見Q&A
-    問卷調查(請先登入)
+    關於我們 about
+    服務項目 item
+        商業攝影 commerce
+        人像攝影 people
+        家庭寫真 family
+        活動紀錄 event
+        寵物寫真 pet
+        婚禮攝影 wedding
+        自助婚紗 dress
+    攝影作品 portfolio
+    好評推薦 good
+    常見Q&A qa
+    聯絡我們 contact
+    問卷調查(請先登入) question
 
-    註冊|登入
+    註冊|登入 admin login
 
-# 輪播圖
+# 輪播圖 carousel
 
-# 總監攝影師
-    簡介
-    照片
+# 總監攝影師 photog
+    簡介 photog-intro
+    照片 photog-img
 
 # 關於我們
 
@@ -85,7 +86,9 @@
     - 自助婚紗
 
 # 攝影作品
-    
+
+# 好評推薦
+
 # 聯絡我們
     地址
     營業時間
