@@ -638,14 +638,14 @@ include_once "api/db.php";
                                         </div>
                                         <!-- 電話 -->
                                         <div class="mb-3 mt-3">
-                                            <label for="mobile" class="form-label">電話：</label>
+                                            <label for="mobile" class="form-label">聯絡電話：</label>
                                             <input type="text" class="form-control" id="mobile"
                                                 placeholder="09xx-xxxxxx" name="mobile">
                                         </div>
 
                                         <!-- 地址 -->
 
-                                        <label for="city" class="form-label">地址</label>
+                                        <label for="city" class="form-label">拍攝地點：</label>
                                         <div class="mb-3 d-flex">
                                             <!-- 縣市 -->
                                             <select class="form-select" id="city" name="city">
@@ -673,7 +673,7 @@ include_once "api/db.php";
                                         <!-- 想諮詢的產品 -->
                                         <div class="mb-3 mt-3">
                                             <label for="photo" class="form-label">檔案上傳
-                                                (可放欲詢問的地板照片、空間照片等，檔案大小2MB以下)</label>
+                                                (可放欲詢問的照片、喜歡的風格等，檔案大小2MB以下)</label>
                                             <input type="file" class="form-control" id="photo" name="photo">
                                         </div>
 
@@ -693,7 +693,7 @@ include_once "api/db.php";
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" id="location3"
                                                     name="location3" value="location3">
-                                                <label class="form-check-label">GOOGLE搜尋</label>
+                                                <label class="form-check-label">GOOGLE 搜尋</label>
                                             </div>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" id="location4"
@@ -703,12 +703,7 @@ include_once "api/db.php";
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" id="location5"
                                                     name="location5" value="location5">
-                                                <label class="form-check-label">親友介紹</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="location6"
-                                                    name="location6" value="location6">
-                                                <label class="form-check-label">設計師推薦</label>
+                                                <label class="form-check-label">親友推薦</label>
                                             </div>
                                         </div>
 
@@ -726,8 +721,14 @@ include_once "api/db.php";
                                 <div class="col-sm-1 mb-4">
                                 </div>
                                 <div class="col-sm-5 mb-4">
-
-                                    <img src="./image/service.png" alt="" class="img-fluid">
+                                    <div class="ratio ratio-16x9 mt-3">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7036493264513!2d121.41951560000001!3d25.044129299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1734592093236!5m2!1szh-TW!2stw"
+                                            style="border:0;" allowfullscreen="" loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                    <img src="./image/service.png" alt="" class="img-fluid mt-3"
+                                        style="width: 80%;height:auto">
                                 </div>
                             </div>
                         </div>
@@ -736,36 +737,6 @@ include_once "api/db.php";
 
                 </div>
             </div>
-
-            <hr class="featurette-divider">
-
-            <!-- iframe -->
-            <div class="contact mb-5 mt-5" id="contact">
-                <div class="row">
-                    <!-- youtube -->
-                    <div class="col-sm-5 mx-auto mb-3">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/f3_HzrWj0WA?si=yA5mf7FJ55PdlSPi"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                    <!-- map -->
-                    <div class="col-sm-5 mx-auto mb-3">
-                        <div class="ratio ratio-16x9">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7036493264513!2d121.41951560000001!3d25.044129299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1734592093236!5m2!1szh-TW!2stw"
-                                style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- form -->
 
             <!-- top button -->
             <button type="button"
