@@ -226,6 +226,14 @@ include_once "api/db.php";
             padding: 5px;
             margin: 10px auto;
         }
+
+        .nav-item:hover {
+            text-decoration: underline;
+            text-decoration-color: #754610;
+            /* text-decoration-style: dotted; */
+            text-decoration-thickness: 3px;
+            text-underline-offset: 8px;
+        }
     </style>
 </head>
 
@@ -239,11 +247,11 @@ include_once "api/db.php";
             <div class="container-fluid">
                 <!-- 品牌 -->
                 <a class="navbar-brand" href="#">
-                    <img src="./image/logohouse.png" width="30" height="30" alt="New York" class="d-block">
+                    <img src="./image/photologo.png" width="30" height="30" alt="New York" class="d-block">
                     <!-- Shop -->
                 </a>
                 <a class="navbar-brand" href="#">
-                    聚焦視界 | FocusScope Studio
+                    聚焦視界 FocusScope Studio
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -287,8 +295,8 @@ include_once "api/db.php";
                             <a class="nav-link" aria-current="page" href="#contact">聯絡我們</a>
                         </li>
                     </ul>
-                    <form class="d-flex me-5">
 
+                    <form class="d-flex me-5">
                         <a href="https://www.facebook.com/?locale=zh_TW"><img
                                 src="https://cdn.pixabay.com/photo/2017/10/04/11/58/facebook-2815970_1280.jpg" alt=""
                                 width="40" height="40" class="me-2"></a>
@@ -301,7 +309,7 @@ include_once "api/db.php";
 
                         <!-- 搜尋框 -->
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
                     </form>
                 </div>
             </div>
