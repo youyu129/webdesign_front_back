@@ -428,16 +428,12 @@ include_once "api/db.php";
                         <hr class="mx-auto" style="width: 35%; border-top: 2px solid #999;">
                         <div class="lh-lg text-wrap p-3">
                             <p>
-                                新北市私立安怡老人長期照顧中心，位於中和區建一路上，
-                                距離環狀線捷運橋和站，走路只要7分鐘，交通十分便利!
-                            </p>
-                            <p>
-                                機構內環境乾淨明亮、通風良好，鬧中取靜！房間及客廳的活動空間寬敞舒適，十分適合長輩居住，資歷豐富的護理/照顧人員，專業的服務，細心的照顧，讓家屬可以放心地將親人交給安怡！
+                                <?=$About->find(1)['text'];?>
                             </p>
                         </div>
                     </div>
                     <div class="col-sm-4 d-flex me-5 p-4" style="align-items:center">
-                        <img src="image/sofa.jpg" class="img-fluid" alt="" style="border-radius: 8px;box-shadow: 4px 4px 8px rgba(91, 36, 5, 0.5);
+                        <img src="upload/<?=$About->find(1)['img'];?>" class="img-fluid" alt="" style="border-radius: 8px;box-shadow: 4px 4px 8px rgba(91, 36, 5, 0.5);
 ">
                     </div>
 
@@ -536,20 +532,20 @@ include_once "api/db.php";
                     環境照片
                 </h2>
                 <hr class="mx-auto" style="width: 35%; border-top: 2px solid #999;">
-
-                <div class="container-fluid mt-5">
-                    <div class="row">
-                        <div class="col-sm-4 mb-2 mt-4 environment">
-                            <img src="image/door.jpg" alt="" class="d-block img-fluid">
-                        </div>
-                        <div class="col-sm-4 mb-2 mt-4 environment">
-                            <img src="image/bed.jpg" alt="" class="d-block img-fluid">
-
-                        </div>
-                        <div class="col-sm-4 mt-4 environment">
-                            <img src="image/nurse.jpg" alt="" class="d-block img-fluid">
+                <div>
+                    <div class="container">
+                        <div class="row">
+                            <?php
+                            $rows=$Pic->all(['sh'=>1]);
+                            foreach($rows as $row){
+                                echo "<div class='col-sm-4 mb-2 mt-4 environment'>
+                                <img src='upload/".$row['img']."' class='d-block img-fluid'>
+                            </div>";
+                            }
+                            ?>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
