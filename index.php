@@ -746,7 +746,7 @@ include_once "api/db.php";
             style="background-color:rgb(249, 142, 79)">
             <div class="row">
                 <div class="col-sm-12 text-center mt-2">
-                    <p> Copyright &copy; 2025 安怡老人長期照顧中心(養護型)
+                    <p><?=$Footer->find(1)['footer'];?>
                     </p>
                 </div>
             </div>
