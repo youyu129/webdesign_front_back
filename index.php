@@ -372,9 +372,8 @@ include_once "api/db.php";
                     </div>
                     <div>
                         <div class="di di ad">
-                            <button
-                                style="width:100%; margin-left:auto; margin-right:auto; margin-top:2px; height:50px;"
-                                class="btn"><a href="admin.php">管理登入</a></button>
+                            <input type="button" class="btn btn-outline-dark"
+                                onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;./modal/login.php&#39;)" value="管理登入">
                         </div>
                     </div>
                 </div>
