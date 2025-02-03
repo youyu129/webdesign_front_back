@@ -371,7 +371,7 @@ include_once "api/db.php";
                             <a class="nav-link" aria-current="page" href="?do=contact">聯絡我們管理</a>
                         </li> -->
                         <li class="nav-item ms-3">
-                            <a class="nav-link" aria-current="page" href="?do=acc">帳號管理</a>
+                            <a class="nav-link" aria-current="page" href="?do=admin">帳號管理</a>
                         </li>
                         <li class="nav-item ms-3">
                             <a class="nav-link" aria-current="page" href="?do=footer">版權頁尾管理</a>
@@ -410,8 +410,7 @@ include_once "api/db.php";
     <main>
 
         <!-- FOOTER -->
-        <footer class="footer position-relative pt-0 ps-3 mx-0 pb-0 mb-0 pt-2"
-            style="background-color:rgb(249, 142, 79)">
+        <footer class="footer" style="width:100%;background-color:rgb(249, 142, 79);position:fixed;bottom:0px">
             <div class="row">
                 <div class="col-sm-12 text-center mt-2">
                     <p> Copyright &copy; 2025 安怡老人長期照顧中心(養護型)

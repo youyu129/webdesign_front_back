@@ -4,25 +4,20 @@
     <div style="width:99%; height:87%; margin:auto;" class="mx-auto">
         <h2 class="t cent botli">簡介管理</h2>
         <form method="post" action="./api/update_data.php">
-            <table class="text-center">
-                <tr>
-                    <td width="50%">簡介</td>
-                    <td width="50%">照片</td>
-
-                </tr>
-                <tr>
-                    <td><textarea name="text" id="text"
-                            style="width:90%;height:30vh"><?=$About->find(1)['text'];?></textarea></td>
-                    <td><img src="upload/sofa.jpg" class="img-fluid"></td>
-
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><button type="button" class="btn btn-outline-primary"
-                            onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;./modal/upload_<?=$do;?>.php&#39;)">更換圖片</button>
-                    </td>
-                </tr>
-            </table>
+            <div class="mx-auto text-center">
+                <div class="input-group">
+                    <span class="input-group-text">簡介</span>
+                    <textarea class="form-control" style="height:30vh;"
+                        aria-label="With textarea"><?=$About->find(1)['text'];?></textarea>
+                </div>
+                <div class="mt-3">
+                    <img src="upload/sofa.jpg" style="height:30vh;">
+                </div>
+                <div>
+                    <button type="button" class="btn btn-outline-primary"
+                        onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;./modal/upload_<?=$do;?>.php&#39;)">更換圖片</button>
+                </div>
+            </div>
     </div>
 
     <table style="margin:auto;margin-top:40px; width:70%;">

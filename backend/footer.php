@@ -21,8 +21,8 @@
                 <td class="cent">
                     <input type="hidden" name="table" value="<?=$do;?>">
                     <input type="hidden" name="id" value="<?=$Footer->find(1)['id'];?>">
-                    <input type="submit" value="修改確定" class="btn btn-success">
-                    <input type="reset" value="重置" class="btn btn-secondary">
+                    <input type="submit" value="修改確定" class="btn btn-outline-info">
+                    <input type="reset" value="重置" class="btn btn-outline-secondary">
                 </td>
             </tr>
         </tbody>

@@ -8,10 +8,10 @@
             <table width="100%" class="cent">
                 <tbody>
                     <tr>
-                        <td width="70%">輪播圖</td>
+                        <td width="60%">輪播圖</td>
                         <td width="10%">顯示</td>
                         <td width="10%">刪除</td>
-                        <td></td>
+                        <td width="20%"></td>
                     </tr>
 
                     <?php
@@ -82,18 +82,16 @@
 
             </div>
 
-            <table style="margin-top:40px; width:70%;">
+            <table style="margin:auto;margin-top:40px; width:70%;">
                 <tbody>
                     <tr>
-                        <td width="200px">
-                            <input type="button"
+                        <td class="cent">
+                            <input type="button" class="btn btn-outline-warning"
                                 onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;./modal/<?=$do;?>.php?table=<?=$do;?>&#39;)"
                                 value="新增輪播圖">
-                        </td>
-                        <td class="cent">
                             <input type="hidden" name="table" value="<?=$do;?>">
-                            <input type="submit" value="修改確定" class="btn btn-success">
-                            <input type="reset" value="重置" class="btn btn-secondary">
+                            <input type="submit" value="修改確定" class="btn btn-outline-info">
+                            <input type="reset" value="重置" class="btn btn-outline-secondary">
                         </td>
                     </tr>
                 </tbody>
