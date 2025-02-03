@@ -180,7 +180,8 @@ function to($url){
     // 測試用
     // echo "Hi 歡迎再次來訪";
 // }
-$Admin=new DB('admins');
 $About=new DB('abouts');
-$Footer=new DB('footers');
+$Carousel=new DB('carousel');
 $Pic=new DB('pics');
+$Admin=new DB('admins');
+$Footer=new DB('footers');

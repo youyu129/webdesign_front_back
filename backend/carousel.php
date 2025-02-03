@@ -17,7 +17,7 @@
                     <?php
                     // 每一頁要幾筆
                     $div=3;
-                    $total=$Image->count();
+                    $total=$Carousel->count();
 
                     $pages=ceil($total/$div);
                     // 如果沒有GET就是第一頁
@@ -27,7 +27,7 @@
                     $start=($now-1)*$div;
 
                     // 從start開始抓，抓div筆
-                    $rows=$Image->all("limit $start,$div");
+                    $rows=$Carousel->all("limit $start,$div");
                     foreach($rows as $row){
                     ?>
 
