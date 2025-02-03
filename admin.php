@@ -358,23 +358,23 @@ include_once "api/db.php";
                             <a class="nav-link" aria-current="page" href="?do=carousel">輪播圖管理</a>
                         </li>
                         <li>
-                            <a class="nav-link" aria-current="page" href="#pic">環境照片管理</a>
+                            <a class="nav-link" aria-current="page" href="?do=pic">環境照片管理</a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="nav-link" aria-current="page" href="#fee">收費方式管理</a>
+                            <a class="nav-link" aria-current="page" href="?do=fee">收費方式管理</a>
                         </li>
 
                         <li class="nav-item ms-3">
-                            <a class="nav-link" aria-current="page" href="#intro">入住須知管理</a>
+                            <a class="nav-link" aria-current="page" href="?do=intro">入住須知管理</a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="nav-link" aria-current="page" href="#contact">聯絡我們管理</a>
+                            <a class="nav-link" aria-current="page" href="?do=contact">聯絡我們管理</a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="nav-link" aria-current="page" href="#acc">帳號管理</a>
+                            <a class="nav-link" aria-current="page" href="?do=acc">帳號管理</a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="nav-link" aria-current="page" href="#footer">版權頁尾管理</a>
+                            <a class="nav-link" aria-current="page" href="?do=footer">版權頁尾管理</a>
                         </li>
                     </ul>
                     <div>
