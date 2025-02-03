@@ -5,9 +5,9 @@
         <h2 class="t cent botli">帳號管理</h2>
         <form method="post" action="./api/edit.php">
             <!-- 顯示資料的table     -->
-            <table width="100%">
+            <table width="100%" class="text-center">
                 <tbody>
-                    <tr class="yel">
+                    <tr>
                         <td width="45%">帳號</td>
                         <td width="45%">密碼</td>
                         <td width="10%">刪除</td>

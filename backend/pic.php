@@ -7,7 +7,7 @@
             <!-- 顯示資料的table     -->
             <table width="100%" class="cent">
                 <tbody>
-                    <tr class="yel">
+                    <tr>
                         <td width="70%">環境照片</td>
                         <td width="10%">顯示</td>
                         <td width="10%">刪除</td>

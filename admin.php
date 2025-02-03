@@ -386,7 +386,7 @@ include_once "api/db.php";
                         <div class="di di ad">
                             <button
                                 style="width:100%; margin-left:auto; margin-right:auto; margin-top:2px; height:50px;"
-                                class="btn"><a href="index.php">管理登出</a></button>
+                                class="btn"><a href="index.php">登出</a></button>
                         </div>
                     </div>
                 </div>
