@@ -1,3 +1,7 @@
+<?php
+include_once "../api/db.php";
+?>
+
 <!-- 考試快速做法 -->
 <?php
 // if(isset($_POST['acc'])){
@@ -22,7 +26,7 @@ if(isset($_POST['acc'])){
 
     if(!empty($row)){
        $_SESSION['login']=1;
-       to("admin.php");
+       to("../admin.php");
     }else{
        echo "<script>alert('帳號或密碼錯誤')</script>";
     }

@@ -3,7 +3,7 @@
 session_start();
 
 class DB{
-    protected $dsn="mysql:host=localhost;charset=utf8;dbname=db10";
+    protected $dsn="mysql:host=localhost;charset=utf8;dbname=dbhw";
     protected $pdo;
     protected $table;
 
@@ -147,7 +147,7 @@ class DB{
 }
 // this要在物件內才可用
 function q($sql){
-    $pdo=new PDO("mysql:host=localhost;charset=utf8;dbname=db10",'root','');
+    $pdo=new PDO("mysql:host=localhost;charset=utf8;dbname=dbhw",'root','');
     return $pdo->query($sql)->fetchAll();
 } 
 
@@ -161,15 +161,6 @@ function to($url){
     header("location:".$url);
 }
 
-$Title=new DB('titles');
-$Ad=new DB('ads');
-$Image=new DB('images');
-$Mvim=new DB('mvims');
-$News=new DB('news');
-$Admin=new DB('admin');
-$Menu=new DB('menus');
-$Total=new DB('total');
-$Bottom=new DB('bottom');
 
 // 如果沒來過的人
 if(!isset($_SESSION['view'])){
@@ -189,3 +180,5 @@ if(!isset($_SESSION['view'])){
     // 測試用
     // echo "Hi 歡迎再次來訪";
 }
+$Admin=new DB('admins');
+$About=new DB('abouts');

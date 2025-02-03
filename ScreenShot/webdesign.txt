@@ -52,7 +52,7 @@ id
 add
 time
 tel
-    * 資料表8：帳號管理(accs)
+    * 資料表8：帳號管理(admins)
             |欄位名|資料型態|主鍵|預設值|自動遞增|備註|
 id
 acc
@@ -62,73 +62,38 @@ pw
 id
 text
 
-
-
-
-
-
-
 -------------------------------------------------
 
 
 3.前台畫面
 
 # navbar
-    首頁
-    關於我們 about
+    關於安怡 about
     服務項目 item
-        商業攝影 commerce
-        人像攝影 people
-        家庭寫真 family
-        活動紀錄 event
-        寵物寫真 pet
-        婚禮攝影 wedding
-        自助婚紗 dress
-    攝影作品 portfolio
-    好評推薦 good
-    常見Q&A qa
+    環境照片 pic
+    收費方式 fee
+    入住須知 intro
     聯絡我們 contact
-    問卷調查(請先登入) question
-
     註冊|登入 admin login
+    FB
 
 # 輪播圖 carousel
 
-# 總監攝影師 photog
-    簡介 photog-intro
-    照片 photog-img
+# 關於安怡 about
 
-# 關於我們
+# 服務項目 item
 
-# 服務項目
-    - 商業攝影
-    - 人像攝影
-    - 家庭寫真
-    - 活動紀錄
-    - 寵物寫真
-    - 婚禮攝影
-    - 自助婚紗
+# 環境照片 pic
 
-# 攝影作品
+# 收費方式 fee
 
-# 好評推薦
+# 入住須知 intro
 
-# 聯絡我們
-    地址
-    營業時間
-    iframe地圖
+# 聯絡我們 contact
 
-# 常見Q&A
+# 頁尾版權 footer
 
-# 問卷調查(請先登入)
-
-# footer
-
-    Copyrights The Photography Studio @2025 ㄆ(今年)
-
-    FB
-    IG
-    YOUTUBE
+# 註冊|登入 admin login
 
 -------------------------------------------------
 
@@ -136,9 +101,12 @@ text
 4.後台畫面
 
 #navbar
-    - 輪播圖管理(圖片)
-    - 攝影師檔案管理(名字、照片、簡介)
-    - 作品集管理
-    - 版權頁尾管理(文字)
-    - 進站人數管理
-    - 帳號管理
+    * 前台-會員註冊登入功能
+    * 後台-輪播圖管理 carousel
+    * 後台-簡介管理 about
+    * 後台-環境照片管理 pic
+    * 後台-收費方式管理 fee
+    * 後台-入住須知管理 intro
+    * 後台-聯絡我們管理 contact 
+    * 後台-帳號管理 acc
+    * 後台-版權頁尾管理 footer
