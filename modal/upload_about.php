@@ -13,7 +13,7 @@
     <div class="cent">
         <input type="hidden" name="id" value="<?=$_GET['id'];?>">
         <input type="hidden" name="table" value="<?=$_GET['table'];?>">
-        <input type="submit" value="更新">
-        <input type="reset" value="重置">
+        <input type="submit" value="更新" class="btn btn-outline-info">
+        <input type="reset" value="重置" class="btn btn-outline-secondary">
     </div>
 </form>
