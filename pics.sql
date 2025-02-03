@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2025 年 02 月 03 日 15:54
+-- 產生時間： 2025 年 02 月 03 日 18:29
 -- 伺服器版本： 10.4.32-MariaDB
 -- PHP 版本： 8.2.12
 
@@ -40,7 +40,8 @@ CREATE TABLE `pics` (
 INSERT INTO `pics` (`id`, `sh`, `img`) VALUES
 (1, 1, 'bed.jpg'),
 (2, 1, 'door.jpg'),
-(3, 1, 'nurse.jpg');
+(3, 1, 'nurse.jpg'),
+(4, 0, 'anyiqrcode.jpeg');
 
 --
 -- 已傾印資料表的索引
@@ -60,7 +61,7 @@ ALTER TABLE `pics`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `pics`
 --
 ALTER TABLE `pics`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
