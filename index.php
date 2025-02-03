@@ -393,15 +393,14 @@ include_once "api/db.php";
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="image/bed.jpg" class="d-block w-100" alt="..." style="height: 80vh;width: auto;">
-                </div>
-                <div class="carousel-item">
-                    <img src="image/nurse.jpg" class="d-block w-100" alt="..." style="height: 80vh;width: auto;">
-                </div>
-                <div class="carousel-item ">
-                    <img src="image/door.jpg" class="d-block" alt="..." style="height: 80vh;width: 100%;">
-                </div>
+                <?php
+                $rows=$Carousel->all(['sh'=>1]);
+                foreach($rows as $row){
+                    echo "<div class='carousel-item active'>
+                    <img src='upload/".$row['img']."' class='d-block w-100' alt='...' style='height: 80vh;width: auto;'>
+                </div>";
+                }
+                ?>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev">
