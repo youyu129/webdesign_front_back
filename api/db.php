@@ -163,22 +163,24 @@ function to($url){
 
 
 // 如果沒來過的人
-if(!isset($_SESSION['view'])){
+// if(!isset($_SESSION['view'])){
     // 測試用
     // echo "Hi 歡迎第一次來訪";
     
     // 並設定變數view=1
-    $_SESSION['view']=1;
+    // $_SESSION['view']=1;
 
-    // 資料庫要+1
-    $total=$Total->find(1);
-    $total['total']++;
-    $Total->save($total);
+    // // 資料庫要+1
+    // $total=$Total->find(1);
+    // $total['total']++;
+    // $Total->save($total);
 // }else{
     // 已經有變數view的，會顯示再次來訪
     
     // 測試用
     // echo "Hi 歡迎再次來訪";
-}
+// }
 $Admin=new DB('admins');
 $About=new DB('abouts');
+$Footer=new DB('footers');
+$Pic=new DB('pics');

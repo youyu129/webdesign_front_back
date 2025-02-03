@@ -15,6 +15,11 @@ if(isset($_POST['id'])){
             $row=$$db->find($id);
             
             switch($table){
+                case "about":
+                    $row['text']=$_POST['text'][$idx];
+                    $row['img']=$_POST['img'][$idx];
+                    break;
+
                 case "admin":
                     $row['acc']=$_POST['acc'][$idx];
                     $row['pw']=$_POST['pw'][$idx];

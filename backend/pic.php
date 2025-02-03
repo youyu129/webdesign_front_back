@@ -2,13 +2,13 @@
     <!--正中央-->
 
     <div style="width:99%; height:87%; margin:auto;" class="mx-auto">
-        <h2 class="t cent botli">輪播圖管理</h2>
+        <h2 class="t cent botli">環境照片管理</h2>
         <form method="post" action="./api/edit.php">
             <!-- 顯示資料的table     -->
             <table width="100%" class="cent">
                 <tbody>
                     <tr class="yel">
-                        <td width="70%">校園映像資料圖片</td>
+                        <td width="70%">環境照片</td>
                         <td width="10%">顯示</td>
                         <td width="10%">刪除</td>
                         <td></td>
@@ -17,7 +17,7 @@
                     <?php
                     // 每一頁要幾筆
                     $div=3;
-                    $total=$Image->count();
+                    $total=$Pic->count();
 
                     $pages=ceil($total/$div);
                     // 如果沒有GET就是第一頁
@@ -27,7 +27,7 @@
                     $start=($now-1)*$div;
 
                     // 從start開始抓，抓div筆
-                    $rows=$Image->all("limit $start,$div");
+                    $rows=$Pic->all("limit $start,$div");
                     foreach($rows as $row){
                     ?>
 
@@ -88,12 +88,12 @@
                         <td width="200px">
                             <input type="button"
                                 onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;./modal/<?=$do;?>.php?table=<?=$do;?>&#39;)"
-                                value="新增校園映像圖片">
+                                value="新增環境照片">
                         </td>
                         <td class="cent">
                             <input type="hidden" name="table" value="<?=$do;?>">
-                            <input type="submit" value="修改確定" class="btn btn-success">
-                            <input type="reset" value="重置" class="btn btn-secondary">
+                            <input type="submit" value="修改確定">
+                            <input type="reset" value="重置">
                         </td>
                     </tr>
                 </tbody>

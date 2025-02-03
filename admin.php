@@ -334,7 +334,7 @@ include_once "api/db.php";
         <!-- navbar-expand-sm 響應式 -->
         <!-- position-fixed 固定在頂端 -->
         <!-- w-100 寬度滿版 -->
-        <nav class="navbar navbar-expand-sm navbar-light  fixed-top w-100" style="background-color:rgb(251, 160, 108);">
+        <nav class="navbar navbar-expand-lg navbar-light  fixed-top w-100" style="background-color:rgb(251, 160, 108);">
             <div class="container-fluid">
                 <!-- logo -->
                 <a class="navbar-brand" href="#">
@@ -342,7 +342,7 @@ include_once "api/db.php";
                 </a>
                 <a class="navbar-brand" href="index.php">
                     <img src="image/logo.png" alt="" style="width: 40px;" class="me-2">
-                    安怡老人長期照顧中心-管理中心
+                    安怡長照中心
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -357,19 +357,19 @@ include_once "api/db.php";
                         <li class="nav-item ms-3">
                             <a class="nav-link" aria-current="page" href="?do=carousel">輪播圖管理</a>
                         </li>
-                        <li>
+                        <li class="nav-item ms-3">
                             <a class="nav-link" aria-current="page" href="?do=pic">環境照片管理</a>
                         </li>
-                        <li class="nav-item ms-3">
+                        <!-- <li class="nav-item ms-3">
                             <a class="nav-link" aria-current="page" href="?do=fee">收費方式管理</a>
-                        </li>
+                        </li> -->
 
-                        <li class="nav-item ms-3">
+                        <!-- <li class="nav-item ms-3">
                             <a class="nav-link" aria-current="page" href="?do=intro">入住須知管理</a>
-                        </li>
-                        <li class="nav-item ms-3">
+                        </li> -->
+                        <!-- <li class="nav-item ms-3">
                             <a class="nav-link" aria-current="page" href="?do=contact">聯絡我們管理</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item ms-3">
                             <a class="nav-link" aria-current="page" href="?do=acc">帳號管理</a>
                         </li>
