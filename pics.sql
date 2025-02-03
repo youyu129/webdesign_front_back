@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2025 年 02 月 03 日 12:20
+-- 產生時間： 2025 年 02 月 03 日 15:54
 -- 伺服器版本： 10.4.32-MariaDB
 -- PHP 版本： 8.2.12
 
@@ -34,6 +34,15 @@ CREATE TABLE `pics` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- 傾印資料表的資料 `pics`
+--
+
+INSERT INTO `pics` (`id`, `sh`, `img`) VALUES
+(1, 1, 'bed.jpg'),
+(2, 1, 'door.jpg'),
+(3, 1, 'nurse.jpg');
+
+--
 -- 已傾印資料表的索引
 --
 
@@ -51,7 +60,7 @@ ALTER TABLE `pics`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `pics`
 --
 ALTER TABLE `pics`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

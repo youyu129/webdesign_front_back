@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2025 年 02 月 03 日 12:20
+-- 產生時間： 2025 年 02 月 03 日 15:54
 -- 伺服器版本： 10.4.32-MariaDB
 -- PHP 版本： 8.2.12
 
@@ -29,14 +29,14 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `footers` (
   `id` int(10) UNSIGNED NOT NULL,
-  `text` text NOT NULL
+  `footer` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- 傾印資料表的資料 `footers`
 --
 
-INSERT INTO `footers` (`id`, `text`) VALUES
+INSERT INTO `footers` (`id`, `footer`) VALUES
 (1, 'Copyright © 2025 安怡老人長期照顧中心(養護型)');
 
 --

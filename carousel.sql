@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2025-02-03 09:26:26
+-- 產生時間： 2025 年 02 月 03 日 15:55
 -- 伺服器版本： 10.4.32-MariaDB
 -- PHP 版本： 8.2.12
 
@@ -34,6 +34,16 @@ CREATE TABLE `carousel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- 傾印資料表的資料 `carousel`
+--
+
+INSERT INTO `carousel` (`id`, `img`, `sh`) VALUES
+(2, 'bed.jpg', 1),
+(3, 'door.jpg', 1),
+(4, 'nurse.jpg', 1),
+(5, 'morning.png', 0);
+
+--
 -- 已傾印資料表的索引
 --
 
@@ -51,7 +61,7 @@ ALTER TABLE `carousel`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `carousel`
 --
 ALTER TABLE `carousel`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
