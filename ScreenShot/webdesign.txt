@@ -102,8 +102,8 @@ text
 
 #navbar
     * 前台-會員註冊登入功能
-    * 後台-輪播圖管理 carousel
     * 後台-簡介管理 about
+    * 後台-輪播圖管理 carousel
     * 後台-環境照片管理 pic
     * 後台-收費方式管理 fee
     * 後台-入住須知管理 intro

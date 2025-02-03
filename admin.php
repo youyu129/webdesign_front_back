@@ -313,7 +313,7 @@ include_once "api/db.php";
     .adminBox {
         width: 80%;
         height: 80vh;
-        background-color: red;
+        /* background-color: lightblue; */
         margin: auto;
     }
     </style>
@@ -340,7 +340,7 @@ include_once "api/db.php";
                 <a class="navbar-brand" href="#">
 
                 </a>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.php">
                     <img src="image/logo.png" alt="" style="width: 40px;" class="me-2">
                     安怡老人長期照顧中心-管理中心
                 </a>
@@ -352,11 +352,10 @@ include_once "api/db.php";
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item ms-3">
-                            <a class="nav-link" aria-current="page" href="#carousel">輪播圖管理</a>
+                            <a class="nav-link" aria-current="page" href="?do=about">簡介管理</a>
                         </li>
-
                         <li class="nav-item ms-3">
-                            <a class="nav-link" aria-current="page" href="#about">簡介管理</a>
+                            <a class="nav-link" aria-current="page" href="?do=carousel">輪播圖管理</a>
                         </li>
                         <li>
                             <a class="nav-link" aria-current="page" href="#pic">環境照片管理</a>
@@ -395,7 +394,17 @@ include_once "api/db.php";
         </nav>
     </div>
     <div class="adminBox mt-5 pt-5">
-        <?php include "";?>
+        <?php
+			// $do=(isset($_GET[do]))?$_GET['do']:'main';
+			
+			// 語法是isset時，才能簡化為??的寫法
+			$do=$_GET['do']??'about';
+
+			$file="./backend/{$do}.php";
+
+			// 簡化為三元運算式
+			include (file_exists($file))?$file:"./backend/about.php";
+			?>
     </div>
 
     <main>
