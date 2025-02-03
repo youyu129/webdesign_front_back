@@ -88,7 +88,7 @@
                         <td width="200px">
                             <input type="button"
                                 onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;./modal/<?=$do;?>.php?table=<?=$do;?>&#39;)"
-                                value="新增校園映像圖片">
+                                value="新增輪播圖">
                         </td>
                         <td class="cent">
                             <input type="hidden" name="table" value="<?=$do;?>">
