@@ -1,29 +1,7 @@
-<?php
-include_once "../api/db.php";
-?>
-
-<?php
-if(isset($_SESSION['login'])){
-	to("admin.php");
-	exit();	
-}
-
-if(isset($_POST['acc'])){
-    $row=$Admin->find(['acc'=>$_POST['acc'],'pw'=>$_POST['pw']]);
-
-    if(!empty($row)){
-       $_SESSION['login']=1;
-       to("admin.php");
-    }else{
-       echo "<script>alert('帳號或密碼錯誤')</script>";
-    }
-}
-?>
-
 <div class="di mx-auto">
     <div style="height:32px; display:block;"></div>
     <!--正中央-->
-    <form method="post" action="">
+    <form method="post" action="./api/login.php">
         <div class="text-center">
             <p class="t botli">管理員登入區</p>
         </div>
