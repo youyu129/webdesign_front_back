@@ -10,8 +10,8 @@
             <div class="text-center">
                 <div class="input-group">
                     <span class="input-group-text">簡介</span>
-                    <textarea class="form-control" style="height:25vh;"
-                        aria-label="With textarea"><?=$row['text'];?></textarea>
+                    <textarea class="form-control" name="about" style="height:25vh;"
+                        aria-label="With textarea"><?=$row['about'];?></textarea>
                 </div>
                 <div class="mt-3">
                     <img src="upload/<?=$row['img'];?>" style="height:30vh;">
