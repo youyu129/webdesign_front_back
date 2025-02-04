@@ -373,7 +373,7 @@ include_once "api/db.php";
                     <div>
                         <div class="di di ad">
                             <input type="button" class="btn btn-outline-dark"
-                                onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;./modal/login.php&#39;)" value="管理登入">
+                                onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;./front/login.php&#39;)" value="管理登入">
                         </div>
                     </div>
                 </div>
