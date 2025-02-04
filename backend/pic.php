@@ -1,4 +1,4 @@
-<div class="di" style="width:76.5%; margin:2px 0px 0px 0px;">
+<div class="di" style="width:100%; margin:2px 0px 0px 0px;">
     <!--正中央-->
 
     <div style="width:99%; height:87%; margin:auto;" class="mx-auto">

@@ -373,7 +373,7 @@ include_once "api/db.php";
                     <div>
                         <div class="di di ad">
                             <input type="button" class="btn btn-outline-dark"
-                                onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;./front/login.php&#39;)" value="管理登入">
+                                onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;./modal/login.php&#39;)" value="管理登入">
                         </div>
                     </div>
                 </div>
@@ -427,7 +427,7 @@ include_once "api/db.php";
                         <hr class="mx-auto" style="width: 35%; border-top: 2px solid #999;">
                         <div class="lh-lg text-wrap p-3">
                             <p>
-                                <?=$About->find(1)['text'];?>
+                                <?=$About->find(1)['about'];?>
                             </p>
                         </div>
                     </div>

@@ -2,19 +2,6 @@
 include_once "../api/db.php";
 ?>
 
-<!-- 考試快速做法 -->
-<?php
-// if(isset($_POST['acc'])){
-    // if($_POST['acc']=='admin' && $_POST['pw']=='1234'){
-    //    $_SESSION['login']=1;
-    //    to("admin.php");
-    // }else{
-    //    echo "<script>alert('帳號或密碼錯誤')</script>";
-    // }
-// }
-?>
-
-<!-- 正確做法 -->
 <?php
 if(isset($_SESSION['login'])){
 	to("admin.php");
@@ -26,7 +13,7 @@ if(isset($_POST['acc'])){
 
     if(!empty($row)){
        $_SESSION['login']=1;
-       to("../admin.php");
+       to("admin.php");
     }else{
        echo "<script>alert('帳號或密碼錯誤')</script>";
     }
@@ -36,7 +23,7 @@ if(isset($_POST['acc'])){
 <div class="di mx-auto">
     <div style="height:32px; display:block;"></div>
     <!--正中央-->
-    <form method="post" action="?do=login">
+    <form method="post" action="">
         <div class="text-center">
             <p class="t botli">管理員登入區</p>
         </div>
