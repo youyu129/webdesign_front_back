@@ -3,7 +3,7 @@
 session_start();
 
 class DB{
-    protected $dsn="mysql:host=localhost;charset=utf8;dbname=dbhw";
+    protected $dsn="mysql:host=localhost;charset=utf8;dbname=s1130206";
     protected $pdo;
     protected $table;
 
@@ -147,7 +147,7 @@ class DB{
 }
 // this要在物件內才可用
 function q($sql){
-    $pdo=new PDO("mysql:host=localhost;charset=utf8;dbname=dbhw",'root','');
+    $pdo=new PDO("mysql:host=localhost;charset=utf8;dbname=s1130206",'root','');
     return $pdo->query($sql)->fetchAll();
 } 
 
@@ -185,3 +185,4 @@ $Carousel=new DB('carousel');
 $Pic=new DB('pics');
 $Admin=new DB('admins');
 $Footer=new DB('footers');
+$Message=new DB('messages');

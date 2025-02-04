@@ -788,7 +788,7 @@ include_once "api/db.php";
                                     </div>
                                     <!-- 送出 -->
                                     <div class="mx-auto text-center">
-                                        <input type="hidden" name="table" value="messages">
+                                        <input type="hidden" name="table" value="message">
                                         <button type="submit" class="btn btn-secondary mt-5">送出</button>
                                     </div>
                                 </form>
