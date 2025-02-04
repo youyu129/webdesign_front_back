@@ -351,7 +351,7 @@ include_once "api/db.php";
                         <li class="nav-item ms-3">
                             <a class="nav-link" aria-current="page" href="#item">服務項目</a>
                         </li>
-                        <li>
+                        <li class="nav-item ms-3">
                             <a class="nav-link" aria-current="page" href="#pic">環境照片</a>
                         </li>
                         <li class="nav-item ms-3">
@@ -788,6 +788,7 @@ include_once "api/db.php";
                                     </div>
                                     <!-- 送出 -->
                                     <div class="mx-auto text-center">
+                                        <input type="hidden" name="table" value="messages">
                                         <button type="submit" class="btn btn-secondary mt-5">送出</button>
                                     </div>
                                 </form>
@@ -810,7 +811,7 @@ include_once "api/db.php";
             <div class="add" id="add">
                 <div class="text-center">
                     <h2 class="fw-bold mt-3">
-                        <img src="image/phone-call.png" alt="" style="width: 40px;margin-right:10px">
+                        <img src="image/map.png" alt="" style="width: 40px;margin-right:10px">
                         機構位置
                     </h2>
                     <hr class="mx-auto mb-5" style="width: 35%; border-top: 2px solid #999;">
