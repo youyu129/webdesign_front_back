@@ -694,14 +694,14 @@ include_once "api/db.php";
                             <div class="col-sm-12">
                                 <button class="btn btn-light w-25 mt-3 text-secondary"><a
                                         href="https://1966.gov.tw/LTC/cp-6533-70777-207.html"
-                                        class="text-decoration-none text-dark">申請長照服務</a></button>
+                                        class="text-decoration-none text-dark" target="_blank">申請長照服務</a></button>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
                                 <button class="btn btn-light w-25 mt-3"><a
                                         href="https://1966.gov.tw/LTC/cp-6454-70075-207.html"
-                                        class="text-decoration-none text-dark">喘息服務</a></button>
+                                        class="text-decoration-none text-dark" target="_blank">喘息服務</a></button>
                             </div>
 
                         </div>
@@ -709,7 +709,7 @@ include_once "api/db.php";
                             <div class="col-sm-12">
                                 <button class="btn btn-light w-25 mt-3 text-secondary"><a
                                         href="https://1966.gov.tw/LTC/cp-6457-69925-207.html"
-                                        class="text-decoration-none text-dark">住宿式服務使用者補助方案</a></button>
+                                        class="text-decoration-none text-dark" target="_blank">住宿式服務使用者補助方案</a></button>
                             </div>
 
                         </div>
@@ -717,7 +717,7 @@ include_once "api/db.php";
                             <div class="col-sm-12">
                                 <button class="btn btn-light w-25 mt-3 text-secondary"><a
                                         href="https://1966.gov.tw/LTC/cp-6456-69825-207.html"
-                                        class="text-decoration-none text-dark">失智症照護與服務資源</a></button>
+                                        class="text-decoration-none text-dark" target="_blank">失智症照護與服務資源</a></button>
                             </div>
 
                         </div>
@@ -725,7 +725,8 @@ include_once "api/db.php";
                             <div class="col-sm-12">
                                 <button class="btn btn-light w-25 mt-3 text-secondary"><a
                                         href="https://1966.gov.tw/LTC/mp-207.html"
-                                        class="text-decoration-none text-dark">衛福部長照專區(1966專線)</a></button>
+                                        class="text-decoration-none text-dark"
+                                        target="_blank">衛福部長照專區(1966專線)</a></button>
                             </div>
 
                         </div>
