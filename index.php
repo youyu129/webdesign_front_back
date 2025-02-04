@@ -748,7 +748,7 @@ include_once "api/db.php";
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6 mb-4 mx-auto text-start">
-                                <form>
+                                <form action="api/message.php" method="post" enctype="multipart/form-data">
                                     <!-- 姓名 -->
                                     <div class="mb-3 mt-3">
                                         <input type="text" class="form-control" id="name" placeholder="姓名" name="name">
@@ -782,8 +782,9 @@ include_once "api/db.php";
 
                                     <!-- 留言 -->
                                     <div class="mt-3">
-                                        <label for="note" class="form-label">留言</label>
-                                        <textarea class="form-control" id="note" rows="3"></textarea>
+                                        <label for="note" class="form-label"></label>
+                                        <textarea class="form-control" id="note" rows="3" placeholder="留言"
+                                            name="text"></textarea>
                                     </div>
                                     <!-- 送出 -->
                                     <div class="mx-auto text-center">
@@ -795,7 +796,7 @@ include_once "api/db.php";
                             <div class="col-sm-1 mb-4">
                             </div>
                             <div class="col-sm-5 mb-4">
-                                <img src="./image/service.png" alt="" class="img-fluid">
+                                <img src="image/service.png" class="img-fluid">
                             </div>
                         </div>
                     </div>
