@@ -28,6 +28,21 @@ include_once "api/db.php";
 
     html {
         scroll-behavior: smooth;
+        font-size: 1.1vw;
+    }
+
+    /* 螢幕寬度小於 768px 時 */
+    @media (max-width: 768px) {
+        html {
+            font-size: 18px;
+        }
+    }
+
+    /* 螢幕寬度小於 480px 時 */
+    @media (max-width: 480px) {
+        html {
+            font-size: 16px;
+        }
     }
 
     body {
@@ -327,7 +342,7 @@ include_once "api/db.php";
         <!-- navbar-expand-sm 響應式 -->
         <!-- position-fixed 固定在頂端 -->
         <!-- w-100 寬度滿版 -->
-        <nav class="navbar navbar-expand-sm navbar-light  fixed-top w-100" style="background-color:rgb(251, 160, 108);">
+        <nav class="navbar navbar-expand-sm navbar-light  fixed-top w-100" style="background-color:rgb(250, 238, 222);">
             <div class="container-fluid">
                 <!-- logo -->
                 <a class="navbar-brand" href="#">
@@ -422,7 +437,7 @@ include_once "api/db.php";
         <!-- <hr class="featurette-divider"> -->
 
         <!-- 關於安怡 -->
-        <div class="vh-75 pt-5 pb-5 mb-5 background">
+        <div class="vh-75 pt-5 pb-5 mb-5">
             <div class="about" id="about">
                 <div class="row">
                     <div class="col-sm-7 text-center mb-4 mt-5">
@@ -449,7 +464,7 @@ include_once "api/db.php";
         <!-- <hr class="featurette-divider"> -->
 
         <!-- 服務項目 item -->
-        <div class="vh-75">
+        <div class="vh-75 background">
             <div class="item" id="item">
                 <div class="contact mb-5 mt-3 p-2" id="item">
                     <h2 class="fw-bold mt-3 text-center">
@@ -527,7 +542,7 @@ include_once "api/db.php";
                 </div>
             </div>
         </div>
-        <hr class="featurette-divider">
+        <!-- <hr class="featurette-divider"> -->
 
         <!-- 環境照片 pic -->
         <div class="vh-75 pt-5 pb-5 mb-5">
@@ -556,7 +571,7 @@ include_once "api/db.php";
         </div>
 
         <!-- 收費方式 fee -->
-        <div class="vh-75 background pt-3 pb-3">
+        <div class="vh-75 pt-3 pb-3 background">
             <div class="fee" id="fee">
                 <div class="contact pb-3 mt-3" id="fee">
                     <div class="row">
@@ -692,14 +707,14 @@ include_once "api/db.php";
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12">
-                                <button class="btn btn-light w-25 mt-3 text-secondary"><a
+                                <button class="btn btn-light w-25 w-sm-50 mt-3 text-secondary"><a
                                         href="https://1966.gov.tw/LTC/cp-6533-70777-207.html"
                                         class="text-decoration-none text-dark" target="_blank">申請長照服務</a></button>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <button class="btn btn-light w-25 mt-3"><a
+                                <button class="btn btn-light w-25 w-sm-50 mt-3"><a
                                         href="https://1966.gov.tw/LTC/cp-6454-70075-207.html"
                                         class="text-decoration-none text-dark" target="_blank">喘息服務</a></button>
                             </div>
@@ -707,7 +722,7 @@ include_once "api/db.php";
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <button class="btn btn-light w-25 mt-3 text-secondary"><a
+                                <button class="btn btn-light w-25 w-sm-50 mt-3 text-secondary"><a
                                         href="https://1966.gov.tw/LTC/cp-6457-69925-207.html"
                                         class="text-decoration-none text-dark" target="_blank">住宿式服務使用者補助方案</a></button>
                             </div>
@@ -715,7 +730,7 @@ include_once "api/db.php";
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <button class="btn btn-light w-25 mt-3 text-secondary"><a
+                                <button class="btn btn-light w-25 w-sm-50 mt-3 text-secondary"><a
                                         href="https://1966.gov.tw/LTC/cp-6456-69825-207.html"
                                         class="text-decoration-none text-dark" target="_blank">失智症照護與服務資源</a></button>
                             </div>
@@ -723,7 +738,7 @@ include_once "api/db.php";
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <button class="btn btn-light w-25 mt-3 text-secondary"><a
+                                <button class="btn btn-light w-25 w-sm-50 mt-3 text-secondary"><a
                                         href="https://1966.gov.tw/LTC/mp-207.html"
                                         class="text-decoration-none text-dark"
                                         target="_blank">衛福部長照專區(1966專線)</a></button>
@@ -765,11 +780,11 @@ include_once "api/db.php";
                                     <!-- 縣市 -->
                                     <div class="d-flex">
                                         <select class="form-select w-25" id="city" name="city">
-                                            <option value="">居住區域</option>
+                                            <option value="">居住縣市</option>
                                         </select>
                                         <!-- 區域 -->
                                         <select class="form-select w-25" id="district" name="district" disabled>
-                                            <option value="">請選擇區域</option>
+                                            <option value="">居住區域</option>
                                         </select>
                                     </div>
 
@@ -1024,7 +1039,7 @@ include_once "api/db.php";
         const districtSelect = document.getElementById('district');
 
         // 清空區域選項
-        districtSelect.innerHTML = '<option value="">請選擇區域</option>';
+        districtSelect.innerHTML = '<option value="">請選擇</option>';
 
         // 如果選擇了城市，顯示相應的區域
         if (city && cityDistrictMap[city]) {
