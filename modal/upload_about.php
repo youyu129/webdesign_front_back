@@ -2,10 +2,13 @@
 <hr>
 <form action="api/update.php" method="post" enctype="multipart/form-data">
 
-    <table>
+    <table style="margin:auto;width:60%;">
         <tr>
-            <td>圖片：</td>
-            <td><input type="file" name="img" id="img"></td>
+            <td>
+                <div class="input-group mb-3">
+                    <input type="file" name="img" class="form-control">
+                </div>
+            </td>
         </tr>
 
     </table>

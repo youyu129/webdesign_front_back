@@ -2,24 +2,33 @@
 <hr>
 <form action="api/insert.php" method="post" enctype="multipart/form-data">
 
-    <table>
+    <table style="margin:auto;width:60%;">
         <tr>
-            <td>帳號：</td>
-            <td><input type="text" name="acc" id="acc"></td>
+            <td>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" name="acc" placeholder="帳號">
+                </div>
+            </td>
         </tr>
         <tr>
-            <td>密碼：</td>
-            <td><input type="password" name="pw" id="pw"></td>
+            <td>
+                <div class="input-group mb-3">
+                    <input type="password" name="pw" class="form-control" name="acc" placeholder="密碼">
+                </div>
+            </td>
         </tr>
         <tr>
-            <td>確認密碼：</td>
-            <td><input type="password" name="pw2" id="pw2"></td>
+            <td>
+                <div class="input-group mb-3">
+                    <input type="password" name="pw2" class="form-control" name="acc" placeholder="確認密碼">
+                </div>
+            </td>
         </tr>
     </table>
 
     <div class="cent">
         <input type="hidden" name="table" value="<?=$_GET['table'];?>">
-        <input type="submit" value="新增">
-        <input type="reset" value="重置">
+        <input type="submit" value="新增" class="btn btn-outline-warning">
+        <input type="reset" value="重置" class="btn btn-outline-secondary">
     </div>
 </form>

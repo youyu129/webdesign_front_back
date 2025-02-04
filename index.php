@@ -362,6 +362,12 @@ include_once "api/db.php";
                             <a class="nav-link" aria-current="page" href="#intro">入住須知</a>
                         </li>
                         <li class="nav-item ms-3">
+                            <a class="nav-link" aria-current="page" href="#ltc">長照服務</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link" aria-current="page" href="#add">機構位置</a>
+                        </li>
+                        <li class="nav-item ms-3">
                             <a class="nav-link" aria-current="page" href="#contact">聯絡我們</a>
                         </li>
                     </ul>
@@ -674,14 +680,137 @@ include_once "api/db.php";
                 </table>
             </div>
         </div>
+        <!-- 長照服務 ltc -->
+        <div class="background vh-75 pt-5 pb-5 mb-5">
+            <div class="ltc text-center" id="ltc">
+                <h2 class="fw-bold">
+                    <img src="image/heart.png" alt="" style="width: 40px;margin-right:10px">
+                    長照服務資源
+                </h2>
+                <hr class="mx-auto" style="width: 35%; border-top: 2px solid #999;">
+                <div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button class="btn btn-light w-25 mt-3 text-secondary"><a
+                                        href="https://1966.gov.tw/LTC/cp-6533-70777-207.html"
+                                        class="text-decoration-none text-dark">申請長照服務</a></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button class="btn btn-light w-25 mt-3"><a
+                                        href="https://1966.gov.tw/LTC/cp-6454-70075-207.html"
+                                        class="text-decoration-none text-dark">喘息服務</a></button>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button class="btn btn-light w-25 mt-3 text-secondary"><a
+                                        href="https://1966.gov.tw/LTC/cp-6457-69925-207.html"
+                                        class="text-decoration-none text-dark">住宿式服務使用者補助方案</a></button>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button class="btn btn-light w-25 mt-3 text-secondary"><a
+                                        href="https://1966.gov.tw/LTC/cp-6456-69825-207.html"
+                                        class="text-decoration-none text-dark">失智症照護與服務資源</a></button>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button class="btn btn-light w-25 mt-3 text-secondary"><a
+                                        href="https://1966.gov.tw/LTC/mp-207.html"
+                                        class="text-decoration-none text-dark">衛福部長照專區(1966專線)</a></button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
         <!-- <hr class="featurette-divider"> -->
         <!-- 聯絡我們 contact -->
-        <div class="vh-75 background pt-3">
+        <div class="vh-75 pt-3">
             <div class="contact" id="contact">
                 <div class="text-center">
                     <h2 class="fw-bold mt-3">
                         <img src="image/phone-call.png" alt="" style="width: 40px;margin-right:10px">
                         聯絡我們
+                    </h2>
+                    <hr class="mx-auto mb-5" style="width: 35%; border-top: 2px solid #999;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 mb-4 mx-auto text-start">
+                                <form>
+                                    <!-- 姓名 -->
+                                    <div class="mb-3 mt-3">
+                                        <input type="text" class="form-control" id="name" placeholder="姓名" name="name">
+                                    </div>
+                                    <!-- 電話 -->
+                                    <div class="mb-3 mt-3">
+                                        <label for="mobile" class="form-label"></label>
+                                        <input type="text" class="form-control" id="mobile" placeholder="聯絡電話"
+                                            name="mobile">
+                                    </div>
+
+                                    <!-- 地址 -->
+                                    <!-- 縣市 -->
+                                    <div class="d-flex">
+                                        <select class="form-select w-25" id="city" name="city">
+                                            <option value="">居住區域</option>
+                                        </select>
+                                        <!-- 區域 -->
+                                        <select class="form-select w-25" id="district" name="district" disabled>
+                                            <option value="">請選擇區域</option>
+                                        </select>
+                                    </div>
+
+
+
+                                    <!-- Email -->
+                                    <div class="mb-3 mt-3">
+                                        <input type="email" class="form-control" id="email" placeholder="Email"
+                                            name="email">
+                                    </div>
+
+                                    <!-- 留言 -->
+                                    <div class="mt-3">
+                                        <label for="note" class="form-label">留言</label>
+                                        <textarea class="form-control" id="note" rows="3"></textarea>
+                                    </div>
+                                    <!-- 送出 -->
+                                    <div class="mx-auto text-center">
+                                        <button type="submit" class="btn btn-secondary mt-5">送出</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="col-sm-1 mb-4">
+                            </div>
+                            <div class="col-sm-5 mb-4">
+                                <img src="./image/service.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- 機構位置 add -->
+        <div class="vh-75 mt-3 pt-3 mb-0 pb-0 background">
+            <div class="add" id="add">
+                <div class="text-center">
+                    <h2 class="fw-bold mt-3">
+                        <img src="image/phone-call.png" alt="" style="width: 40px;margin-right:10px">
+                        機構位置
                     </h2>
                     <hr class="mx-auto mb-5" style="width: 35%; border-top: 2px solid #999;">
                     <div class="container">
@@ -723,7 +852,6 @@ include_once "api/db.php";
 
             </div>
         </div>
-
         <!-- top button -->
         <!-- <button type="button"
             class="btn btn-light position-absolute bottom-0 end-0 translate-middle-y position-fixed border"
@@ -742,8 +870,7 @@ include_once "api/db.php";
             </div>
         </div> -->
         <!-- FOOTER -->
-        <footer class="footer position-relative pt-0 ps-3 mx-0 pb-0 mb-0 pt-2"
-            style="background-color:rgb(249, 142, 79)">
+        <footer class="footer position-relative pt-0 ps-3 mx-0 pb-0 mb-0" style="background-color:rgb(249, 142, 79)">
             <div class="row">
                 <div class="col-sm-12 text-center mt-2">
                     <p><?=$Footer->find(1)['footer'];?>
@@ -833,6 +960,82 @@ include_once "api/db.php";
                 $('.navbar').css('opacity', '1');
             }, 200); // 200ms 沒有滾動則認為滾動停止
         });
+    });
+    </script>
+    <!-- 全台灣各縣市及區域資料 -->
+    <script>
+    const cityDistrictMap = {
+        "台北市": ["中正區", "大同區", "松山區", "信義區", "大安區", "南港區", "北投區", "內湖區", "士林區", "文山區"],
+        "新北市": ["板橋區", "新莊區", "三重區", "中和區", "永和區", "土城區", "蘆洲區", "樹林區", "三峽區", "鶯歌區", "淡水區", "金山區", "萬里區", "林口區",
+            "八里區", "平溪區", "雙溪區", "貢寮區", "新店區", "深坑區", "石碇區", "坪林區", "烏來區"
+        ],
+        "桃園市": ["桃園區", "中壢區", "平鎮區", "八德區", "楊梅區", "蘆竹區", "大溪區", "龍潭區", "龜山區", "大園區", "觀音區", "新屋區", "復興區"],
+        "台中市": ["中區", "東區", "南區", "西區", "北區", "西屯區", "南屯區", "東屯區", "大里區", "太平區", "豐原區", "大甲區", "清水區", "沙鹿區", "龍井區",
+            "大肚區", "烏日區", "和平區", "大雅區", "神岡區", "潭子區", "大安區"
+        ],
+        "台南市": ["東區", "北區", "南區", "安平區", "安南區", "永康區", "歸仁區", "新化區", "左鎮區", "玉井區", "楠西區", "南化區", "仁德區", "關廟區",
+            "龍崎區", "官田區", "麻豆區", "佳里區", "西港區", "七股區", "將軍區", "學甲區", "北門區", "新營區", "鹽水區", "後壁區", "白河區", "東山區",
+            "六甲區", "下營區", "柳營區", "大內區", "山上區", "新市區", "安定區"
+        ],
+        "高雄市": ["苓雅區", "左營區", "楠梓區", "三民區", "鳳山區", "林園區", "大寮區", "大樹區", "旗山區", "美濃區", "六龜區", "內門區", "杉林區", "甲仙區",
+            "桃源區", "那瑪夏區", "茂林區", "茄萣區", "小港區"
+        ],
+        "基隆市": ["仁愛區", "信義區", "中正區", "中山區", "安樂區", "暖暖區", "七堵區"],
+        "宜蘭縣": ["宜蘭市", "羅東鎮", "蘇澳鎮", "冬山鄉", "五結鄉", "員山鄉", "大同鄉", "南澳鄉", "頭城鎮", "礁溪鄉", "三星鄉"],
+        "新竹縣": ["竹北市", "湖口鄉", "新豐鄉", "新埔鎮", "關西鎮", "芎林鄉", "寶山鄉", "竹東鎮", "五峰鄉", "橫山鄉", "尖石鄉", "北埔鄉", "峨眉鄉"],
+        "苗栗縣": ["苗栗市", "頭份市", "竹南鎮", "三灣鄉", "南庄鄉", "獅潭鄉", "後龍鎮", "通霄鎮", "苑裡鎮", "大湖鄉", "埔心鄉", "五福鄉", "冷水鄉", "三義鄉",
+            "西湖鄉", "卓蘭鎮"
+        ],
+        "彰化縣": ["彰化市", "芬園鄉", "花壇鄉", "秀水鄉", "鹿港鎮", "福興鄉", "線西鄉", "和美鎮", "伸港鄉", "員林市", "社頭鄉", "永靖鄉", "埔心鄉", "大村鄉",
+            "溪湖鎮", "大雅鄉", "河東鄉", "草湖鄉", "鶴壁鄉", "北斗鎮"
+        ],
+        "南投縣": ["南投市", "埔里鎮", "草屯鎮", "竹山鎮", "集集鎮", "名間鄉", "水里鄉", "魚池鄉", "信義鄉", "仁愛鄉"],
+        "雲林縣": ["斗六市", "斗南鎮", "虎尾鎮", "西螺鎮", "土庫鎮", "褒忠鄉", "東勢鄉", "臺西鄉", "崙背鄉", "麥寮鄉", "四湖鄉", "元長鄉", "口湖鄉", "水林鄉",
+            "西山鄉"
+        ],
+        "嘉義縣": ["太保市", "朴子市", "布袋鎮", "大林鎮", "民雄鄉", "溪口鄉", "阿里山鄉", "中埔鄉", "竹崎鄉", "梅山鄉", "番路鄉", "大埔鄉", "五峰鄉"],
+        "屏東縣": ["屏東市", "三地門鄉", "霧台鄉", "瑪家鄉", "九如鄉", "里港鄉", "高樹鄉", "鹽埔鄉", "長治鄉", "麟洛鄉", "竹田鄉", "內埔鄉", "萬丹鄉", "潮州鎮",
+            "東港鎮", "恆春鎮", "滿州鄉", "車城鄉", "三和鄉", "牡丹鄉"
+        ],
+        "台東縣": ["台東市", "成功鎮", "關山鎮", "海端鄉", "池上鄉", "東河鄉", "長濱鄉", "鹿野鄉", "緣分村", "達仁鄉", "太麻里鄉", "金峰鄉", "大武鄉", "太平洋鄉",
+            "蘭嶼鄉"
+        ],
+        "花蓮縣": ["花蓮市", "鳳林鎮", "玉里鎮", "光復鄉", "豐濱鄉", "瑞穗鄉", "富里鄉", "卓溪鄉", "吉安鄉", "新城鄉", "秀林鄉", "萬榮鄉"],
+        "澎湖縣": ["馬公市", "湖西鄉", "白沙鄉", "西嶼鄉", "望安鄉", "七美鄉"],
+        "金門縣": ["金城鎮", "金湖鎮", "金寧鄉", "烈嶼鄉", "烏坵鄉"],
+        "馬祖縣": ["南竿鄉", "北竿鄉", "莒光鄉", "東引鄉"]
+    };
+
+    // 載入縣市選項
+    const citySelect = document.getElementById('city');
+    for (let city in cityDistrictMap) {
+        const option = document.createElement('option');
+        option.value = city;
+        option.textContent = city;
+        citySelect.appendChild(option);
+    }
+
+    // 當城市選擇改變時，更新區域選項
+    document.getElementById('city').addEventListener('change', function() {
+        const city = this.value;
+        const districtSelect = document.getElementById('district');
+
+        // 清空區域選項
+        districtSelect.innerHTML = '<option value="">請選擇區域</option>';
+
+        // 如果選擇了城市，顯示相應的區域
+        if (city && cityDistrictMap[city]) {
+            const districts = cityDistrictMap[city];
+            districts.forEach(function(district) {
+                const option = document.createElement('option');
+                option.value = district;
+                option.textContent = district;
+                districtSelect.appendChild(option);
+            });
+            districtSelect.disabled = false; // 啟用區域選擇
+        } else {
+            districtSelect.disabled = true; // 禁用區域選擇
+        }
     });
     </script>
 </body>

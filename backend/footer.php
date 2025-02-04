@@ -4,8 +4,8 @@
     <div style="width:99%; height:87%; margin:auto;" class="mx-auto">
         <h2 class="t cent botli">頁尾版權管理</h2>
         <form method="post" action="./api/update_data.php">
-            <div class="input-group mt-5" style="width:80%;margin:auto">
-                <span class="input-group-text" id="basic-addon1">頁尾版權</span>
+            <div class="input-group mt-5" style="width:70%;margin:auto">
+                <span class="input-group-text">頁尾版權</span>
                 <input class="form-control" type="text" name="footer" value="<?=$Footer->find(1)['footer'];?>">
             </div>
 
