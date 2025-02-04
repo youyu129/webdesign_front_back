@@ -365,10 +365,10 @@ include_once "api/db.php";
                             <a class="nav-link" aria-current="page" href="#ltc">長照服務</a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="nav-link" aria-current="page" href="#add">機構位置</a>
+                            <a class="nav-link" aria-current="page" href="#contact">聯絡我們</a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="nav-link" aria-current="page" href="#contact">聯絡我們</a>
+                            <a class="nav-link" aria-current="page" href="#add">機構位置</a>
                         </li>
                     </ul>
                     <div>
