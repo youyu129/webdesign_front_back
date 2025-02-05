@@ -23,8 +23,8 @@
             <tr>
 
                 <td colspan=2 class="text-center">
-                    <input value="送出" type="submit">
-                    <input type="reset" value="清除">
+                    <input value="送出" type="submit" class="btn btn-outline-info">
+                    <input type="reset" value="清除" class="btn btn-outline-secondary">
                 </td>
             </tr>
         </table>

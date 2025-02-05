@@ -29,21 +29,6 @@ include_once "api/db.php";
 
     html {
         scroll-behavior: smooth;
-        font-size: 1.1vw;
-    }
-
-    /* 螢幕寬度小於 768px 時 */
-    @media (max-width: 768px) {
-        html {
-            font-size: 18px;
-        }
-    }
-
-    /* 螢幕寬度小於 480px 時 */
-    @media (max-width: 480px) {
-        html {
-            font-size: 16px;
-        }
     }
 
     body {
@@ -298,14 +283,14 @@ include_once "api/db.php";
 
     /* 有背景色的區域 */
     .background {
-        background-color: #ffe8dc;
+        background-color: rgb(247, 228, 202);
     }
 
     /* 收費表 */
     .feeTable {
-        width: 70%;
+        width: 60%;
         margin: auto;
-        background-color: #fcbf9e;
+        background-color: rgb(228, 210, 188);
     }
 
     .card {
@@ -343,7 +328,7 @@ include_once "api/db.php";
         <!-- navbar-expand-sm 響應式 -->
         <!-- position-fixed 固定在頂端 -->
         <!-- w-100 寬度滿版 -->
-        <nav class="navbar navbar-expand-sm navbar-light  fixed-top w-100" style="background-color:rgb(250, 238, 222);">
+        <nav class="navbar navbar-expand-sm navbar-light  fixed-top w-100" style="background-color:rgb(247,234,215);">
             <div class="container-fluid">
                 <!-- logo -->
                 <a class="navbar-brand" href="#">
@@ -465,7 +450,7 @@ include_once "api/db.php";
         <!-- <hr class="featurette-divider"> -->
 
         <!-- 服務項目 item -->
-        <div class="vh-75 background">
+        <div class="w-75 vh-75 background mx-auto rounded shadow-sm">
             <div class="item" id="item">
                 <div class="contact mb-5 mt-3 p-2" id="item">
                     <h2 class="fw-bold mt-3 text-center">
@@ -572,7 +557,7 @@ include_once "api/db.php";
         </div>
 
         <!-- 收費方式 fee -->
-        <div class="vh-75 pt-3 pb-3 background">
+        <div class="vh-75 pt-3 pb-3 background w-75 mx-auto rounded shadow-sm">
             <div class="fee" id="fee">
                 <div class="contact pb-3 mt-3" id="fee">
                     <div class="row">
@@ -697,7 +682,7 @@ include_once "api/db.php";
             </div>
         </div>
         <!-- 長照服務 ltc -->
-        <div class="background vh-75 pt-5 pb-5 mb-5">
+        <div class="background vh-75 pt-5 pb-5 mb-5 w-75 mx-auto rounded shadow-sm">
             <div class="ltc text-center" id="ltc">
                 <h2 class="fw-bold">
                     <img src="image/heart.png" alt="" style="width: 40px;margin-right:10px">
@@ -824,7 +809,7 @@ include_once "api/db.php";
         </div>
 
         <!-- 機構位置 add -->
-        <div class="vh-75 mt-3 pt-3 mb-0 pb-0 background">
+        <div class="vh-75 mt-3 pt-3 mb-0 pb-0" style="background:rgb(233, 232, 231)">
             <div class="add" id="add">
                 <div class="text-center">
                     <h2 class="fw-bold mt-3">
@@ -889,7 +874,7 @@ include_once "api/db.php";
             </div>
         </div> -->
         <!-- FOOTER -->
-        <footer class="footer position-relative pt-0 ps-3 mx-0 pb-0 mb-0" style="background-color:rgb(249, 142, 79)">
+        <footer class="footer position-relative pt-0 ps-3 mx-0 pb-0 mb-0" style="background-color:rgb(100, 96, 92);">
             <div class="row">
                 <div class="col-sm-12 text-center mt-2">
                     <p><?=$Footer->find(1)['footer'];?>

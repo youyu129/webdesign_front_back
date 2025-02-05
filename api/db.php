@@ -9,6 +9,7 @@ class DB{
 
     function __construct($table){
         $this->table=$table;
+        // $this->pdo=new PDO($this->dsn,'s1130206','s1130206');
         $this->pdo=new PDO($this->dsn,'root','');
     }
 
@@ -147,6 +148,7 @@ class DB{
 }
 // this要在物件內才可用
 function q($sql){
+    // $pdo=new PDO("mysql:host=localhost;charset=utf8;dbname=s1130206",'s1130206','s1130206');
     $pdo=new PDO("mysql:host=localhost;charset=utf8;dbname=s1130206",'root','');
     return $pdo->query($sql)->fetchAll();
 } 
