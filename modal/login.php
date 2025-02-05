@@ -1,11 +1,11 @@
-<div class="di mx-auto">
+<div class="di mx-auto w-100">
     <div style="height:32px; display:block;"></div>
     <!--正中央-->
     <form method="post" action="./api/login.php">
         <div class="text-center">
             <p class="t botli">管理員登入區</p>
         </div>
-        <table>
+        <table class="w-75 mx-auto">
             <tr>
                 <td>
                     <div class="input-group mb-3">
