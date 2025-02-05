@@ -335,7 +335,7 @@ include_once "api/db.php";
         <!-- navbar-expand-sm 響應式 -->
         <!-- position-fixed 固定在頂端 -->
         <!-- w-100 寬度滿版 -->
-        <nav class="navbar navbar-expand-lg navbar-light  fixed-top w-100" style="background-color:rgb(251, 160, 108);">
+        <nav class="navbar navbar-expand-lg navbar-light  fixed-top w-100" style="background-color:rgb(247,234,215);">
             <div class="container-fluid">
                 <!-- logo -->
                 <a class="navbar-brand" href="#">
@@ -407,9 +407,8 @@ include_once "api/db.php";
     </div>
 
     <main>
-
         <!-- FOOTER -->
-        <footer class="footer" style="width:100%;background-color:rgb(249, 142, 79);position:fixed;bottom:0px">
+        <footer class="footer" style="width:100%;background-color:rgb(100, 96, 92);position:fixed;bottom:0px">
             <div class="row">
                 <div class="col-sm-12 text-center mt-2">
                     <p> <?=$Footer->find(1)['footer'];?>

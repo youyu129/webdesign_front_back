@@ -6,7 +6,7 @@
         <form method="post" action="./api/edit.php">
             <!-- 顯示資料的table     -->
 
-            <table width="100%" class="text-center">
+            <table width="70%" class="text-center mx-auto">
                 <thead>
                     <th width="40%"></th>
                     <th width="40%"></th>

@@ -33,7 +33,7 @@
 
                     <tr>
                         <td>
-                            <img src="./upload/<?=$row['img'];?>" style="width:100px;height:68px;">
+                            <img src="./upload/<?=$row['img'];?>" style="width:50%;height:auto;">
                         </td>
                         <td>
                             <input type="checkbox" name="sh[]" value="<?=$row['id'];?>"
